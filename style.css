@@ -1,67 +1,81 @@
 body{
     background-color: rgb(9, 9, 78);
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 95vh;
-    display: flex;
-    width: 200vh;
+    min-height: 100vh;
+
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
     flex-direction: column;
 }
+
 .bloco{
     border-radius: 10px;
     padding: 20px;
     text-align: center;
     background-color: rgb(252, 252, 252);
-    width: 70vh;
-    height: 145vh;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 
+    width: 100%;
+    max-width: 500px; /* controla tamanho no PC */
 }
+
 button{
     border: none;
     background-color: orangered;
     color: white;
-    width: 150px;
+    width: 100%;
+    max-width: 200px;
     border-radius: 20px;
     padding: 13px;
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
     transition: 0.3s;
 }
+
 button:hover{
     background-color: crimson;
     transform: translateY(-3px);
 }
+
 .titulo{
     color: rgb(7, 7, 78);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 2.5em;
+    font-size: 2em;
 }
+
 .pa{
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
 }
+
 .oferta{
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size:medium;
+    font-size: medium;
 }
+
 .po{
-    font-weight:lighter;
+    font-weight: lighter;
     font-size: small;
     color: gray;
 }
+
 .lo{
     border: none;
     border-radius: 10px;
     padding: 10px;
     background-color: rgb(255, 255, 255);
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-    list-style:none;
-    width: 30%;
-    margin: 0 auto;
+    list-style: none;
 
+    width: 40%;
+    max-width: 400px;
+    margin: 20px auto;
 }
